@@ -1,0 +1,1 @@
+# this is a practice project to get the fundamentals of coding using Rust
