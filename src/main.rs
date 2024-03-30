@@ -1,3 +1,5 @@
+//importing the m1_enums.rs module
+mod m1_enums;
 
 //const OUR_COURSE: &str = "Rust with AutoGPT"; //stored in static memory
 
@@ -121,7 +123,7 @@ fn main() {
     let text = r#"{\"message" : "Rust is Awesome"}"#;
     println!("{}", text);
     */
-    
+
 
 
 }
