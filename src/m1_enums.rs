@@ -1,3 +1,5 @@
+use core::num;
+
 //creating enums excerises
 //tell rust that the enum is dubggable
 #[derive(Debug)]
@@ -18,6 +20,13 @@ enum GivenResult<T, E>{
     Err(E)
 }
 
+#[derive(Debug)]
+enum GivenOption<T>{
+    None,
+    Some(T)
+}
+
+
 //function that will return a car colour
 fn handle_car_colour_blue() -> CarColour{
     let my_car_colour: CarColour = CarColour::Blue; //the enum CarColour becomes a type in this case
@@ -34,6 +43,38 @@ fn check_under_five(num_check: u8) -> GivenResult<u8, String>{
     }
 }
 
+//Rust builtin version of enum
+fn check_under_five_built_in(num_check: u8) -> Result<u8, String>{
+    if num_check < 5{
+        Ok(num_check)
+
+    }else{
+        Err("Not Under 5!".to_string())
+    }
+}
+
+//option enum
+fn remainder_zero(num_check: f32) -> GivenOption<f32>{
+    //retrn something or nothing
+    let remainder = num_check% 10.0;
+    if remainder != 0.0{
+        GivenOption::Some(remainder)
+    }else{
+        GivenOption::None
+    }
+}
+
+//Rust built in option enum
+fn remainder_zero_built_in(num_check: f32) -> Option<f32>{
+    //retrn something or nothing
+    let remainder = num_check% 10.0;
+    if remainder != 0.0{
+        Some(remainder)
+    }else{
+        None
+    }
+}
+
 //unit test
 #[cfg(test)]
 mod test{
@@ -45,9 +86,12 @@ mod test{
         let car_colour= handle_car_colour_blue();
         dbg!(car_colour);
 
-        let under_five_res = check_under_five(2);
+        let under_five_res = check_under_five_built_in(2);
         dbg!(under_five_res);
-        let under_five_res = check_under_five(7);
+        let under_five_res = check_under_five_built_in(7);
         dbg!(under_five_res);
+
+        let remainder = remainder_zero_built_in(12.2);
+        dbg!(remainder);
     }
 }
