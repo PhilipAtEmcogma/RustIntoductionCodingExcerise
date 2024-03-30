@@ -1,6 +1,7 @@
 //importing the m1_enums.rs module
 mod m1_enums;
 mod m2_struct;
+mod m3_traits;
 
 //const OUR_COURSE: &str = "Rust with AutoGPT"; //stored in static memory
 
