@@ -98,5 +98,30 @@ fn main() {
     }
     */
 
+    //Closures
+    // let num = 5;
+    // let add_num = |x:i32| x+num; //implemented function, a closure
+    // let new_num = add_num(7);
+    // println!("{}", new_num);
+
+    /* 
+    //Number Literals and Raw Strings
+    //Number literals (from Rust Book)
+    //using _ as separators for big numbers is a features for Rust, which makes it easier to read
+    println!("Big Number is {}", 98_222_000);
+    //Hex Number
+    println!("Hex is {}", 0xFFF);
+    //Octo number
+    println!("Octo is {}", 0o77);
+    //Binary
+    println!("Binary is {}", 0b111100001111);
+    //Bytes
+    println!("Butes for 'A' is {}", b'A');
+    //Raw - String Literal
+    let text = r#"{\"message" : "Rust is Awesome"}"#;
+    println!("{}", text);
+    */
+    
+
 
 }
