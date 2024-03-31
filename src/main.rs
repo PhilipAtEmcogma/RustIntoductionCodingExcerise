@@ -3,6 +3,7 @@ mod m1_enums;
 mod m2_struct;
 mod m3_traits;
 mod m4_polymorphism;
+mod m5_lifetimes;
 
 //const OUR_COURSE: &str = "Rust with AutoGPT"; //stored in static memory
 
