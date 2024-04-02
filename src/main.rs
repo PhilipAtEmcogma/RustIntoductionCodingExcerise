@@ -8,6 +8,7 @@ mod m6_patterns;
 mod m7_async;
 mod m8_CollectionUsingHashing;
 mod m9_declarative_macros;
+mod m10_proc_macros;
 
 //const OUR_COURSE: &str = "Rust with AutoGPT"; //stored in static memory
 
