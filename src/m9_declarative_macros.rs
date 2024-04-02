@@ -47,6 +47,8 @@ mod tests{
     //     }
     // }
 
+    //exporting the macro so other files in the project can use it
+    #[macro_export]
     //create a vector macro and put at least 1 variables in
     macro_rules! my_vec {
         //+ indicates at the user need to provide at least 1 reptition of macro captures, in the case below ($x:expr)
