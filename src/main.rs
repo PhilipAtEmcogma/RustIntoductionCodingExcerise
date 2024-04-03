@@ -6,9 +6,10 @@ mod m4_polymorphism;
 mod m5_lifetimes;
 mod m6_patterns;
 mod m7_async;
-mod m8_CollectionUsingHashing;
+mod m8_collection_using_hashing;
 mod m9_declarative_macros;
 mod m10_proc_macros;
+mod m11_smart_pointers;
 
 //const OUR_COURSE: &str = "Rust with AutoGPT"; //stored in static memory
 
