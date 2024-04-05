@@ -1,4 +1,4 @@
-workspace = { members = ["my_proc_macro"] }
+workspace = { members = ["my_proc_macro", "web_template"] }
 [package]
 name = "playaround"
 version = "0.1.0"
