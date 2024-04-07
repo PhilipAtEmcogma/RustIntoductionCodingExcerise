@@ -1,3 +1,4 @@
+//code template to be provide for LLM as an example on how to create CRUD code
 use actix_cors::Cors;
 use actix_web::{http::header, web, App, HttpServer, Responder, HttpResponse};
 use serde::{Deserialize, Serialize};
